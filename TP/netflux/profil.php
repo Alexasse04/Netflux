@@ -63,15 +63,16 @@
                         
 
                         //Recup acteurs
-                        $sqlActeur="SELECT * FROM acteur JOIN joue ON joue.fkActeur=acteur.idActeur WHERE video.Titre=Titre";
+                        $sqlActeur="SELECT * FROM acteur JOIN joue ON joue.fkActeur=acteur.idActeur WHERE joue.fkVideo=:idVideo";
                         $req = $bdd -> prepare($sqlActeur);
+                        $req->bindValue(':idVideo',$element['idVideo'], PDO::PARAM_INT);
                         $req -> execute();
                         $donnees2 = $req->fetchAll();
 
                         // Affichage acteurs
                         foreach($donnees2 as $element2){
                             
-                            echo "<id=film".$element2["idActeur"].">" . $element2["Prenom"]. " " .$element2["Nom"].">";
+                            echo "<p id=acteur".$element2["idActeur"].">" . $element2["Prenom"]. " " .$element2["Nom"]."</p>";
                             
                             }
                         
