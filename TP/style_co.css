@@ -1,0 +1,54 @@
+body{
+	background-color : #FAEBD7;
+}
+.cadre{
+	background-color : #DEB887;
+	text-align : left;
+	width:50%;
+	margin-top : 5em;
+	margin-left : auto;
+	margin-right : auto ;
+	border : solid 6px ;
+	border-color : #808080;
+	border-radius : 10px;
+	font-family : Calibri ;
+	box-shadow : 6px 6px 25px rgba(0,0,0,0.5) ;
+	
+}
+.cadrebody{
+	margin : 3em ;
+	padding : 3em;
+}
+.cadre>footer{
+	padding-bottom : 0.5em;
+	font-style: italic;
+}
+
+
+.oblig {
+	color : red ;
+}
+
+h1{
+	text-align: center ;
+}
+
+p{
+	text-align: center;
+}
+
+
+input{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0px ;
+	border : 0px;
+	
+}
+#V1{
+	background-color: rgb(60, 90, 223);
+	
+}
+#V2{
+	background-color: rgb(238, 43, 43);
+}
