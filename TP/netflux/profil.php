@@ -59,7 +59,8 @@
                         
                         echo "<li class='film'>";
                         echo "<img id='image".$element['idVideo']."' class='ima' src= 'image/".$element['image'] ."'>";
-                        echo "<div class='infos'>" . $element["Titre"]. " "; 
+                        //Affiche le titre
+                        echo "<div class='infos'>" . $element["Titre"]. " "."<a href=".$element["Lien"].">Lecture</a>"; 
                         
 
                         //Recup acteurs
@@ -89,6 +90,7 @@
             </ul>
 
         </div>
+        
         <script src="api.js"></script>
     </body>
 
